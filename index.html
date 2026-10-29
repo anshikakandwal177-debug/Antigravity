@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anshika | Data Analyst & SQL Specialist Portfolio</title>
+  <meta name="description" content="Portfolio of Anshika, BCA Graduate specializing in Data Science, SQL, Database Normalization, and Data Analytics." />
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="dark-theme">
+  <!-- Background Glow & Grid -->
+  <div class="bg-grid"></div>
+  <div class="glow-orb orb-1"></div>
+  <div class="glow-orb orb-2"></div>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo">
+        <span class="logo-bracket">&lt;</span>Anshika<span class="logo-accent">.Data</span><span class="logo-bracket">/&gt;</span>
+      </a>
+      
+      <nav class="nav-links" id="navLinks">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#sql-showcase" class="nav-link">SQL Lab</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="themeToggle" class="icon-btn" aria-label="Toggle Theme" title="Toggle Theme">
+          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <a href="#contact" class="btn btn-sm btn-primary">Hire Me</a>
+        <button class="mobile-toggle" id="mobileMenuBtn" aria-label="Toggle navigation menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="status-badge">
+            <span class="status-dot"></span>
+            Available for Entry-Level Data Analyst &amp; SQL Roles
+          </div>
+          <h1 class="hero-title">
+            Transforming Complex Data into <span class="gradient-text">Actionable Insights</span> &amp; Robust Schemas.
+          </h1>
+          <p class="hero-subtitle">
+            Hi, I’m <strong>Anshika</strong> — a BCA graduate passionate about Data Science and Structured Query Language (SQL). Adept at relational database normalization, data manipulation, and uncovering high-impact business narratives.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">
+              <span>Explore My Projects</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+            <a href="#sql-showcase" class="btn btn-secondary">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+              <span>View SQL Lab</span>
+            </a>
+          </div>
+
+          <div class="metrics-strip">
+            <div class="metric-card">
+              <span class="metric-number">BCA</span>
+              <span class="metric-label">CS &amp; Data Foundation</span>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-card">
+              <span class="metric-number">3NF/BCNF</span>
+              <span class="metric-label">Database Normalization</span>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-card">
+              <span class="metric-number">SQL &amp; Python</span>
+              <span class="metric-label">Core Tech Stack</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="terminal-card">
+            <div class="terminal-header">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+              <span class="terminal-title">anshika_data_analyst.sql</span>
+            </div>
+            <div class="terminal-body">
+              <pre><code><span class="token-comment">-- Profiling Anshika's Core Qualifications</span>
+<span class="token-keyword">WITH</span> CandidateProfile <span class="token-keyword">AS</span> (
+  <span class="token-keyword">SELECT</span> 
+    <span class="token-string">'Anshika'</span> <span class="token-keyword">AS</span> candidate_name,
+    <span class="token-string">'BCA Graduate'</span> <span class="token-keyword">AS</span> degree,
+    <span class="token-string">'Data Science &amp; SQL'</span> <span class="token-keyword">AS</span> specialization,
+    ARRAY[<span class="token-string">'SQL'</span>, <span class="token-string">'Python'</span>, <span class="token-string">'Power BI'</span>, <span class="token-string">'3NF'</span>] <span class="token-keyword">AS</span> core_skills
+)
+<span class="token-keyword">SELECT</span> 
+  candidate_name,
+  specialization,
+  <span class="token-string">'Ready to drive value in tech'</span> <span class="token-keyword">AS</span> career_objective
+<span class="token-keyword">FROM</span> CandidateProfile;</code></pre>
+            </div>
+            <div class="terminal-output">
+              <div class="output-header"><span class="badge-success">Query Executed</span> 1 row returned (0.02s)</div>
+              <div class="output-row">
+                <span class="output-key">Status:</span>
+                <span class="output-val">Open for Opportunities &amp; Immediate Joining</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Background &amp; Philosophy</span>
+          <h2 class="section-title">About Me</h2>
+          <p class="section-subtitle">Bridging theoretical computer science with practical data problem-solving.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card main-about">
+            <div class="about-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            </div>
+            <h3>Who I Am</h3>
+            <p>
+              I am an energetic <strong>Bachelor of Computer Applications (BCA)</strong> graduate dedicated to turning ambiguous data into organized intelligence. My core domain revolves around <strong>Relational Database Management Systems (RDBMS)</strong>, performance-aware SQL scripting, and exploratory analytics using Python.
+            </p>
+            <p>
+              I believe clean, well-architected data models are the backbone of every high-performing machine learning system and business decision. My goal is to collaborate with cross-functional teams where I can learn rapidly and contribute meaningful solutions from day one.
+            </p>
+          </div>
+
+          <div class="about-card">
+            <div class="about-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+            </div>
+            <h3>Database Normalization</h3>
+            <p>
+              Strong grasp of database integrity rules (1NF, 2NF, 3NF, BCNF), anomaly elimination, entity-relationship (ER) diagrams, and foreign key constraint design.
+            </p>
+          </div>
+
+          <div class="about-card">
+            <div class="about-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+            </div>
+            <h3>Data Manipulation &amp; EDA</h3>
+            <p>
+              Proficient in handling messy datasets, handling missing values, calculating rolling statistics, grouping multidimensional metrics, and feature preparation.
+            </p>
+          </div>
+
+          <div class="about-card">
+            <div class="about-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+            </div>
+            <h3>Actionable Business Insights</h3>
+            <p>
+              Translating numbers into stories through descriptive analytics, cohort tracking, revenue breakdown, and executive dashboard visualization.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Competencies</span>
+          <h2 class="section-title">Technical Toolbelt</h2>
+          <p class="section-subtitle">A curated set of technologies and conceptual knowledge I apply to data problems.</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Skill Group 1 -->
+          <div class="skill-category-card">
+            <div class="cat-header">
+              <div class="cat-icon sql-accent">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+              </div>
+              <h4>Database &amp; SQL Mastery</h4>
+            </div>
+            <ul class="skill-list">
+              <li>
+                <span class="skill-name">PostgreSQL / MySQL</span>
+                <span class="skill-level">Proficient</span>
+              </li>
+              <li>
+                <span class="skill-name">Window Functions (ROW_NUMBER, DENSE_RANK, LEAD/LAG)</span>
+                <span class="skill-level">Advanced</span>
+              </li>
+              <li>
+                <span class="skill-name">CTEs &amp; Recursive Subqueries</span>
+                <span class="skill-level">Proficient</span>
+              </li>
+              <li>
+                <span class="skill-name">Schema Design &amp; Normalization (1NF to BCNF)</span>
+                <span class="skill-level">Proficient</span>
+              </li>
+              <li>
+                <span class="skill-name">Indexing, Views &amp; Stored Procedures</span>
+                <span class="skill-level">Intermediate</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Skill Group 2 -->
+          <div class="skill-category-card">
+            <div class="cat-header">
+              <div class="cat-icon py-accent">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 16 4-4-4-4"/><path d="m6 8-4 4 4 4"/><path d="m14.5 4-5 16"/></svg>
+              </div>
+              <h4>Data Science &amp; Python</h4>
+            </div>
+            <ul class="skill-list">
+              <li>
+                <span class="skill-name">Python (Pandas, NumPy)</span>
+                <span class="skill-level">Proficient</span>
+              </li>
+              <li>
+                <span class="skill-name">Exploratory Data Analysis (EDA)</span>
+                <span class="skill-level">Proficient</span>
+              </li>
+              <li>
+                <span class="skill-name">Data Cleaning &amp; Feature Wrangling</span>
+                <span class="skill-level">Proficient</span>
+              </li>
+              <li>
+                <span class="skill-name">Statistical Summaries &amp; Correlation</span>
+                <span class="skill-level">Intermediate</span>
+              </li>
+              <li>
+                <span class="skill-name">Scikit-Learn (Basic ML Classification/Regression)</span>
+                <span class="skill-level">Foundational</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Skill Group 3 -->
+          <div class="skill-category-card">
+            <div class="cat-header">
+              <div class="cat-icon bi-accent">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>
+              </div>
+              <h4>BI &amp; Visualization</h4>
+            </div>
+            <ul class="skill-list">
+              <li>
+                <span class="skill-name">Power BI (DAX, Interactive Dashboards)</span>
+                <span class="skill-level">Intermediate</span>
+              </li>
+              <li>
+                <span class="skill-name">Matplotlib &amp; Seaborn</span>
+                <span class="skill-level">Proficient</span>
+              </li>
+              <li>
+                <span class="skill-name">Advanced Microsoft Excel (VLOOKUP, Pivot Tables)</span>
+                <span class="skill-level">Advanced</span>
+              </li>
+              <li>
+                <span class="skill-name">KPI Definition &amp; Storytelling</span>
+                <span class="skill-level">Proficient</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Skill Group 4 -->
+          <div class="skill-category-card">
+            <div class="cat-header">
+              <div class="cat-icon tools-accent">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+              </div>
+              <h4>Developer Tools &amp; Methods</h4>
+            </div>
+            <ul class="skill-list">
+              <li>
+                <span class="skill-name">Git &amp; GitHub Version Control</span>
+                <span class="skill-level">Proficient</span>
+              </li>
+              <li>
+                <span class="skill-name">Jupyter Notebook &amp; VS Code</span>
+                <span class="skill-level">Daily Driver</span>
+              </li>
+              <li>
+                <span class="skill-name">Database Modeling Tools (dbdiagram.io, MySQL Workbench)</span>
+                <span class="skill-level">Proficient</span>
+              </li>
+              <li>
+                <span class="skill-name">Computer Science Fundamentals (BCA)</span>
+                <span class="skill-level">Strong</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Hands-on Experience</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">Real-world data problem sets highlighting relational schemas, complex queries, and visual analytics.</p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="project-filters">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="sql">SQL &amp; Schemas</button>
+          <button class="filter-btn" data-filter="python">Python &amp; EDA</button>
+          <button class="filter-btn" data-filter="bi">BI &amp; Analytics</button>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <article class="project-card" data-category="sql bi">
+            <div class="project-banner">
+              <span class="project-badge">SQL • Schema Design</span>
+              <div class="banner-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">E-Commerce RFM Segmentation &amp; Retention Analytics</h3>
+              <p class="project-desc">
+                Architected a fully normalized (3NF) relational database for an e-commerce platform. Developed complex SQL window functions to classify customers into Recency, Frequency, and Monetary (RFM) cohorts, identifying high-churn risk groups.
+              </p>
+              
+              <div class="project-highlights">
+                <div class="highlight-item">
+                  <strong>Normalization:</strong> 3NF schema with foreign key integrity across Users, Orders, Products, and Payments.
+                </div>
+                <div class="highlight-item">
+                  <strong>Core Query:</strong> NTILE() and DENSE_RANK() window functions for automated cohort grading.
+                </div>
+              </div>
+
+              <div class="tech-tags">
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">Window Functions</span>
+                <span class="tag">RFM Modeling</span>
+                <span class="tag">Normalization</span>
+              </div>
+
+              <div class="project-actions">
+                <button class="btn btn-outline btn-sm open-modal-btn" data-modal="modal-rfm">View Query &amp; Architecture</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card" data-category="sql bi">
+            <div class="project-banner">
+              <span class="project-badge">Database Normalization</span>
+              <div class="banner-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Healthcare Patient Admission &amp; Operational Insights</h3>
+              <p class="project-desc">
+                Constructed an RDBMS tracking hospital bed occupancy, physician shifts, and patient readmission rates. Eliminated update/delete anomalies by converting unnormalized clinic spreadsheets into clean 3NF tables.
+              </p>
+              
+              <div class="project-highlights">
+                <div class="highlight-item">
+                  <strong>Normalization:</strong> Resolved multi-valued dependencies and transitive relationships.
+                </div>
+                <div class="highlight-item">
+                  <strong>Insights:</strong> Discovered an 18% readmission bottleneck within specific surgical wards using CTEs.
+                </div>
+              </div>
+
+              <div class="tech-tags">
+                <span class="tag">MySQL</span>
+                <span class="tag">Relational Modeling</span>
+                <span class="tag">CTEs</span>
+                <span class="tag">Power BI</span>
+              </div>
+
+              <div class="project-actions">
+                <button class="btn btn-outline btn-sm open-modal-btn" data-modal="modal-healthcare">View Schema &amp; Details</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card" data-category="python bi">
+            <div class="project-banner">
+              <span class="project-badge">Python • EDA • Dashboard</span>
+              <div class="banner-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="20" x2="12" y2="10"/><line x1="18" y1="20" x2="18" y2="4"/><line x1="6" y1="20" x2="6" y2="16"/></svg>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Superstore Retail Profitability &amp; Discount Analysis</h3>
+              <p class="project-desc">
+                Executed exploratory data analysis on a retail dataset with 50,000+ records. Cleaned outliers, analyzed correlation between discount rates and net margin, and constructed an interactive Power BI dashboard for executive reporting.
+              </p>
+              
+              <div class="project-highlights">
+                <div class="highlight-item">
+                  <strong>Data Prep:</strong> Handled null values, parsed datetime fields, and vectorized computations in Pandas.
+                </div>
+                <div class="highlight-item">
+                  <strong>Discovery:</strong> Pinpointed discounts >20% in furniture categories resulting in negative net margins.
+                </div>
+              </div>
+
+              <div class="tech-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Pandas</span>
+                <span class="tag">Seaborn</span>
+                <span class="tag">Power BI</span>
+              </div>
+
+              <div class="project-actions">
+                <button class="btn btn-outline btn-sm open-modal-btn" data-modal="modal-superstore">View EDA Findings</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive SQL Showcase Section -->
+    <section id="sql-showcase" class="section sql-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Interactive Code Lab</span>
+          <h2 class="section-title">SQL Query Showcase</h2>
+          <p class="section-subtitle">Browse through battle-tested SQL queries showcasing normalization, window calculations, and aggregations.</p>
+        </div>
+
+        <div class="sql-lab-box">
+          <div class="sql-tabs">
+            <button class="sql-tab-btn active" data-tab="tab-rfm">1. Window Functions (RFM)</button>
+            <button class="sql-tab-btn" data-tab="tab-cte">2. Recursive CTE (Monthly Run-Rate)</button>
+            <button class="sql-tab-btn" data-tab="tab-norm">3. 3NF Schema DDL &amp; Constraints</button>
+            <button class="sql-tab-btn" data-tab="tab-leadlag">4. Churn Detection (LEAD / LAG)</button>
+          </div>
+
+          <div class="sql-content-area">
+            <!-- Tab 1 -->
+            <div class="sql-tab-panel active" id="tab-rfm">
+              <div class="sql-panel-header">
+                <div>
+                  <h4 class="tab-heading">RFM Customer Scoring via NTILE() Window Functions</h4>
+                  <p class="tab-desc">Categorizes active shoppers into 4 quantiles based on purchase frequency, monetary value, and recent activity.</p>
+                </div>
+                <button class="copy-code-btn" data-target="code-rfm">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                  <span>Copy SQL</span>
+                </button>
+              </div>
+              <pre class="code-block"><code id="code-rfm"><span class="token-keyword">WITH</span> CustomerAggregates <span class="token-keyword">AS</span> (
+  <span class="token-keyword">SELECT</span>
+    customer_id,
+    <span class="token-keyword">MAX</span>(order_date) <span class="token-keyword">AS</span> last_purchase_date,
+    <span class="token-keyword">COUNT</span>(order_id) <span class="token-keyword">AS</span> total_orders,
+    <span class="token-keyword">SUM</span>(order_amount) <span class="token-keyword">AS</span> total_spend
+  <span class="token-keyword">FROM</span> orders
+  <span class="token-keyword">WHERE</span> status = <span class="token-string">'COMPLETED'</span>
+  <span class="token-keyword">GROUP BY</span> customer_id
+),
+RFMScores <span class="token-keyword">AS</span> (
+  <span class="token-keyword">SELECT</span>
+    customer_id,
+    <span class="token-comment">-- Recency: Higher score for more recent orders</span>
+    <span class="token-keyword">NTILE</span>(4) <span class="token-keyword">OVER</span> (<span class="token-keyword">ORDER BY</span> last_purchase_date <span class="token-keyword">ASC</span>) <span class="token-keyword">AS</span> r_score,
+    <span class="token-comment">-- Frequency: Higher score for repeat transactions</span>
+    <span class="token-keyword">NTILE</span>(4) <span class="token-keyword">OVER</span> (<span class="token-keyword">ORDER BY</span> total_orders <span class="token-keyword">ASC</span>) <span class="token-keyword">AS</span> f_score,
+    <span class="token-comment">-- Monetary: Higher score for greater revenue</span>
+    <span class="token-keyword">NTILE</span>(4) <span class="token-keyword">OVER</span> (<span class="token-keyword">ORDER BY</span> total_spend <span class="token-keyword">ASC</span>) <span class="token-keyword">AS</span> m_score
+  <span class="token-keyword">FROM</span> CustomerAggregates
+)
+<span class="token-keyword">SELECT</span>
+  customer_id,
+  r_score, f_score, m_score,
+  <span class="token-keyword">CASE</span>
+    <span class="token-keyword">WHEN</span> r_score = 4 <span class="token-keyword">AND</span> f_score >= 3 <span class="token-keyword">THEN</span> <span class="token-string">'Champions / VIP'</span>
+    <span class="token-keyword">WHEN</span> r_score <= 2 <span class="token-keyword">AND</span> f_score >= 3 <span class="token-keyword">THEN</span> <span class="token-string">'At Risk / High Value'</span>
+    <span class="token-keyword">WHEN</span> r_score <= 2 <span class="token-keyword">AND</span> f_score <= 2 <span class="token-keyword">THEN</span> <span class="token-string">'Hibernating'</span>
+    <span class="token-keyword">ELSE</span> <span class="token-string">'Promising'</span>
+  <span class="token-keyword">END AS</span> customer_segment
+<span class="token-keyword">FROM</span> RFMScores;</code></pre>
+            </div>
+
+            <!-- Tab 2 -->
+            <div class="sql-tab-panel" id="tab-cte">
+              <div class="sql-panel-header">
+                <div>
+                  <h4 class="tab-heading">Month-over-Month Growth with Common Table Expressions</h4>
+                  <p class="tab-desc">Calculates running revenue and percentage month-over-month growth rate without cartesian joins.</p>
+                </div>
+                <button class="copy-code-btn" data-target="code-cte">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                  <span>Copy SQL</span>
+                </button>
+              </div>
+              <pre class="code-block"><code id="code-cte"><span class="token-keyword">WITH</span> MonthlySales <span class="token-keyword">AS</span> (
+  <span class="token-keyword">SELECT</span>
+    <span class="token-keyword">DATE_TRUNC</span>(<span class="token-string">'month'</span>, order_date) <span class="token-keyword">AS</span> sales_month,
+    <span class="token-keyword">SUM</span>(net_amount) <span class="token-keyword">AS</span> monthly_revenue
+  <span class="token-keyword">FROM</span> sales_transactions
+  <span class="token-keyword">GROUP BY</span> <span class="token-keyword">DATE_TRUNC</span>(<span class="token-string">'month'</span>, order_date)
+),
+SalesWithLag <span class="token-keyword">AS</span> (
+  <span class="token-keyword">SELECT</span>
+    sales_month,
+    monthly_revenue,
+    <span class="token-keyword">LAG</span>(monthly_revenue, 1) <span class="token-keyword">OVER</span> (<span class="token-keyword">ORDER BY</span> sales_month) <span class="token-keyword">AS</span> prev_month_revenue,
+    <span class="token-keyword">SUM</span>(monthly_revenue) <span class="token-keyword">OVER</span> (<span class="token-keyword">ORDER BY</span> sales_month <span class="token-keyword">ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW</span>) <span class="token-keyword">AS</span> cumulative_ytd_revenue
+  <span class="token-keyword">FROM</span> MonthlySales
+)
+<span class="token-keyword">SELECT</span>
+  <span class="token-keyword">TO_CHAR</span>(sales_month, <span class="token-string">'YYYY-MM'</span>) <span class="token-keyword">AS</span> month_formatted,
+  monthly_revenue,
+  cumulative_ytd_revenue,
+  <span class="token-keyword">ROUND</span>(
+    ((monthly_revenue - prev_month_revenue) / <span class="token-keyword">NULLIF</span>(prev_month_revenue, 0)) * 100, 2
+  ) <span class="token-keyword">AS</span> mom_growth_percentage
+<span class="token-keyword">FROM</span> SalesWithLag
+<span class="token-keyword">ORDER BY</span> sales_month <span class="token-keyword">DESC</span>;</code></pre>
+            </div>
+
+            <!-- Tab 3 -->
+            <div class="sql-tab-panel" id="tab-norm">
+              <div class="sql-panel-header">
+                <div>
+                  <h4 class="tab-heading">Third Normal Form (3NF) Relational Architecture DDL</h4>
+                  <p class="tab-desc">Clean, normalized schema preventing insertion/deletion anomalies and maintaining referential integrity.</p>
+                </div>
+                <button class="copy-code-btn" data-target="code-norm">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                  <span>Copy SQL</span>
+                </button>
+              </div>
+              <pre class="code-block"><code id="code-norm"><span class="token-comment">-- 1NF &amp; 2NF Ensured: Atomic attributes and full key dependencies</span>
+<span class="token-keyword">CREATE TABLE</span> product_categories (
+  category_id <span class="token-keyword">SERIAL PRIMARY KEY</span>,
+  category_name <span class="token-keyword">VARCHAR</span>(100) <span class="token-keyword">NOT NULL UNIQUE</span>,
+  department <span class="token-keyword">VARCHAR</span>(50) <span class="token-keyword">NOT NULL</span>
+);
+
+<span class="token-keyword">CREATE TABLE</span> products (
+  product_id <span class="token-keyword">SERIAL PRIMARY KEY</span>,
+  product_name <span class="token-keyword">VARCHAR</span>(150) <span class="token-keyword">NOT NULL</span>,
+  category_id <span class="token-keyword">INT NOT NULL REFERENCES</span> product_categories(category_id) <span class="token-keyword">ON DELETE RESTRICT</span>,
+  unit_price <span class="token-keyword">NUMERIC</span>(10, 2) <span class="token-keyword">CHECK</span> (unit_price > 0),
+  created_at <span class="token-keyword">TIMESTAMP DEFAULT CURRENT_TIMESTAMP</span>
+);
+
+<span class="token-comment">-- 3NF: No transitive dependency of customer details on order_id</span>
+<span class="token-keyword">CREATE TABLE</span> order_items (
+  order_item_id <span class="token-keyword">SERIAL PRIMARY KEY</span>,
+  order_id <span class="token-keyword">INT NOT NULL REFERENCES</span> orders(order_id) <span class="token-keyword">ON DELETE CASCADE</span>,
+  product_id <span class="token-keyword">INT NOT NULL REFERENCES</span> products(product_id),
+  quantity <span class="token-keyword">INT NOT NULL CHECK</span> (quantity > 0),
+  price_at_purchase <span class="token-keyword">NUMERIC</span>(10, 2) <span class="token-keyword">NOT NULL</span>,
+  <span class="token-keyword">CONSTRAINT</span> uq_order_product <span class="token-keyword">UNIQUE</span>(order_id, product_id)
+);
+
+<span class="token-comment">-- Indexing for high-throughput join lookups</span>
+<span class="token-keyword">CREATE INDEX</span> idx_orders_customer ON orders(customer_id);
+<span class="token-keyword">CREATE INDEX</span> idx_order_items_product ON order_items(product_id);</code></pre>
+            </div>
+
+            <!-- Tab 4 -->
+            <div class="sql-tab-panel" id="tab-leadlag">
+              <div class="sql-panel-header">
+                <div>
+                  <h4 class="tab-heading">Days-Between-Visits &amp; Inactivity Flags via LAG()</h4>
+                  <p class="tab-desc">Evaluates session intervals per user to flag declining engagement before churn happens.</p>
+                </div>
+                <button class="copy-code-btn" data-target="code-leadlag">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                  <span>Copy SQL</span>
+                </button>
+              </div>
+              <pre class="code-block"><code id="code-leadlag"><span class="token-keyword">WITH</span> UserActivitySeq <span class="token-keyword">AS</span> (
+  <span class="token-keyword">SELECT</span>
+    user_id,
+    session_timestamp,
+    <span class="token-keyword">LAG</span>(session_timestamp, 1) <span class="token-keyword">OVER</span> (
+      <span class="token-keyword">PARTITION BY</span> user_id 
+      <span class="token-keyword">ORDER BY</span> session_timestamp
+    ) <span class="token-keyword">AS</span> prev_session_time
+  <span class="token-keyword">FROM</span> app_sessions
+)
+<span class="token-keyword">SELECT</span>
+  user_id,
+  session_timestamp,
+  <span class="token-keyword">EXTRACT</span>(DAY <span class="token-keyword">FROM</span> (session_timestamp - prev_session_time)) <span class="token-keyword">AS</span> days_since_last_visit,
+  <span class="token-keyword">CASE</span>
+    <span class="token-keyword">WHEN</span> prev_session_time <span class="token-keyword">IS NULL THEN</span> <span class="token-string">'First Visit'</span>
+    <span class="token-keyword">WHEN</span> <span class="token-keyword">EXTRACT</span>(DAY <span class="token-keyword">FROM</span> (session_timestamp - prev_session_time)) > 30 <span class="token-keyword">THEN</span> <span class="token-string">'Re-Engaged'</span>
+    <span class="token-keyword">ELSE</span> <span class="token-string">'Active Retention'</span>
+  <span class="token-keyword">END AS</span> engagement_state
+<span class="token-keyword">FROM</span> UserActivitySeq;</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education & Certifications -->
+    <section id="education" class="section education-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Credentials</span>
+          <h2 class="section-title">Education &amp; Foundations</h2>
+        </div>
+
+        <div class="edu-grid">
+          <div class="edu-card">
+            <div class="edu-badge">Degree</div>
+            <div class="edu-time">2023 – 2026</div>
+            <h3 class="edu-degree">Bachelor of Computer Applications (BCA)</h3>
+            <p class="edu-institution">University Computer Science Department</p>
+            <p class="edu-desc">
+              Core Coursework: Relational Database Management Systems (RDBMS), Data Structures &amp; Algorithms, Object-Oriented Programming (Python/Java), Discrete Mathematics, Computer Networks, and Software Engineering.
+            </p>
+          </div>
+
+          <div class="edu-card">
+            <div class="edu-badge">Specialization</div>
+            <div class="edu-time">Certifications &amp; Self-Paced</div>
+            <h3 class="edu-degree">Applied SQL &amp; Data Science Track</h3>
+            <p class="edu-institution">Online &amp; Industry Standards</p>
+            <p class="edu-desc">
+              Trained in advanced SQL querying (CTEs, subqueries, indexing), statistical data analysis with Pandas/NumPy, relational schema normalization, and exploratory business dashboarding.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="contact-card">
+          <div class="contact-content">
+            <span class="section-tag">Get in Touch</span>
+            <h2 class="contact-title">Let’s Discuss Data &amp; Opportunities</h2>
+            <p class="contact-desc">
+              I am actively seeking an entry-level position as a <strong>Data Analyst, Junior Data Scientist, or SQL/Database Associate</strong>. If you have an opening or would like to discuss my projects, I'd love to connect!
+            </p>
+
+            <div class="contact-info-list">
+              <div class="info-item">
+                <div class="info-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </div>
+                <div>
+                  <span class="info-label">Email</span>
+                  <div class="copy-email-wrapper">
+                    <span class="info-val" id="userEmail">anshika.datascience@gmail.com</span>
+                    <button class="btn-copy-inline" id="copyEmailBtn" title="Copy to clipboard">Copy</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <div class="info-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                </div>
+                <div>
+                  <span class="info-label">LinkedIn</span>
+                  <a href="https://linkedin.com/in/" target="_blank" rel="noopener noreferrer" class="info-link">linkedin.com/in/anshika-data</a>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <div class="info-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                </div>
+                <div>
+                  <span class="info-label">GitHub</span>
+                  <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="info-link">github.com/anshika-analyst</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-side">
+            <form class="contact-form" id="contactForm" onsubmit="event.preventDefault(); alert('Thank you for reaching out, Anshika will reply soon!');">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" placeholder="Recruiter / Hiring Manager" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Work Email</label>
+                <input type="email" id="email" placeholder="name@company.com" required />
+              </div>
+              <div class="form-group">
+                <label for="message">Message / Opportunity</label>
+                <textarea id="message" rows="4" placeholder="Hi Anshika, we have an exciting role matching your SQL & Data Science background..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modals for Project Deep Dives -->
+  <div class="modal" id="modal-rfm">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3>E-Commerce RFM Customer Segmentation</h3>
+        <button class="modal-close" data-close>&times;</button>
+      </div>
+      <div class="modal-body">
+        <h4>Problem Statement</h4>
+        <p>An online retailer struggled to distinguish dormant one-time shoppers from high-lifetime-value VIP buyers, resulting in wasted promotional spend.</p>
+        
+        <h4>Data Engineering &amp; Normalization</h4>
+        <p>Restructured raw sales dump into 4 normalized tables: <code>customers</code>, <code>orders</code>, <code>order_items</code>, and <code>products</code>, avoiding repeat customer address redundancy (BCNF compliant).</p>
+        
+        <h4>Key Results &amp; Impact</h4>
+        <ul>
+          <li>Identified that 14% of customer accounts contributed to 58% of gross margin.</li>
+          <li>Created targeted SQL views powering marketing re-engagement campaigns.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-healthcare">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3>Healthcare Patient Readmission Model</h3>
+        <button class="modal-close" data-close>&times;</button>
+      </div>
+      <div class="modal-body">
+        <h4>Database Architecture</h4>
+        <p>Eliminated update anomalies in hospital admissions by decoupling patient demographics from episode records, bed assignments, and physician logs.</p>
+        
+        <h4>Analytical Approach</h4>
+        <p>Applied recursive CTEs and lag windows to compute 30-day post-discharge readmission intervals, surfacing department-specific risk indicators.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-superstore">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3>Superstore Profitability &amp; Discount Analysis</h3>
+        <button class="modal-close" data-close>&times;</button>
+      </div>
+      <div class="modal-body">
+        <h4>Exploratory Data Analysis</h4>
+        <p>Conducted in Python using Pandas, Matplotlib, and Seaborn. Checked distribution skewness, correlated shipping modes with delivery delays, and categorized profit margins.</p>
+        
+        <h4>Key Discovery</h4>
+        <p>Showed that higher discount rates in the 'Tables' and 'Supplies' categories did not stimulate enough volume to offset margin loss, advising a pricing recalibration.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast">Email copied to clipboard!</div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <p>&copy; 2026 Anshika. BCA Graduate • Data Science &amp; SQL Enthusiast.</p>
+      <div class="footer-links">
+        <a href="#hero">Back to top &uarr;</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
